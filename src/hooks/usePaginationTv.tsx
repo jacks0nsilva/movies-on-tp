@@ -2,7 +2,7 @@ import React from 'react';
 import { TvPopular } from '../interface/interface';
 
 export const usePaginationTv = (ipp: number, series: TvPopular[]) => {
-    const [itemPerPage, setItemPerPage] = React.useState(ipp);
+    const [itemPerPage] = React.useState(ipp);
     const [currentPage, setCurrentPage] = React.useState(0);
 
     const pages = Math.ceil(series.length / itemPerPage);
@@ -22,7 +22,7 @@ export const usePaginationTv = (ipp: number, series: TvPopular[]) => {
                     </button>
                 )}
 
-                {numberPage.map((item, index) => {
+                {numberPage.map((_item, index) => {
                     return (
                         <button
                             style={

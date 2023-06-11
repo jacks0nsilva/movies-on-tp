@@ -4,7 +4,6 @@ import { ButtonsContainer, Nav } from '../styles/NavBar';
 
 const NavBar = () => {
     const [params, setParams] = React.useState<string>('movie');
-    const [mobile, setMobile] = React.useState<boolean>(false);
 
     return (
         <>
@@ -15,7 +14,7 @@ const NavBar = () => {
                     <button onClick={() => setParams('tv')}>Séries</button>
                 </ButtonsContainer>
             </Nav>
-            <Popular params={params} setMobile={setMobile} />
+            <Popular params={params} />
         </>
     );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as Logo } from '../img/logo.svg';
 import { ReactComponent as Lupa } from '../img/lupa.svg';
-import { ReactComponent as Heart } from '../img/heart-header.svg';
 import { Modal, Navigate } from '../styles/Navigate';
 
 const Header = () => {

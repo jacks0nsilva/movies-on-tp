@@ -2,7 +2,7 @@ import React from 'react';
 import { MoviesPopular } from '../interface/interface';
 
 export const usePaginationMovies = (ipp: number, movies: MoviesPopular[]) => {
-    const [itemPerPage, setItemPerPage] = React.useState(ipp);
+    const [itemPerPage] = React.useState(ipp);
     const [currentPage, setCurrentPage] = React.useState(0);
 
     const pages = Math.ceil(movies.length / itemPerPage);
@@ -22,7 +22,7 @@ export const usePaginationMovies = (ipp: number, movies: MoviesPopular[]) => {
                     </button>
                 )}
 
-                {numberPage.map((item, index) => {
+                {numberPage.map((_item, index) => {
                     return (
                         <button
                             style={
