@@ -78,7 +78,7 @@ body{
 }
 
 @media(max-width: 600px){
-        .embedResponsive{
+     .embedResponsive{
         width: 100%;
     }
 

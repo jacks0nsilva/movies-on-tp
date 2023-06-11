@@ -30,7 +30,7 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: 600px) {
-        padding: 0 2rem;
+        padding: 0 1rem;
 
         h1 {
             font-size: 1rem;
@@ -48,7 +48,7 @@ export const ButtonsContainer = styled.div`
         text-transform: uppercase;
         padding: 0.6rem 0.8rem;
         cursor: pointer;
-        margin: 0.8rem;
+        margin: 0.8rem 0.8rem 0.8rem 0;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 0.4rem;
     }

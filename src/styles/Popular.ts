@@ -6,7 +6,7 @@ export const Container = styled.section`
     background: #2b2b31;
 
     @media (max-width: 600px) {
-        padding: 4rem 2rem;
+        padding: 1rem;
     }
 `;
 
@@ -17,7 +17,7 @@ export const List = styled.ul`
     grid-template-rows: 1fr;
     justify-content: center;
     li {
-        margin: 1rem 0.6rem;
+        margin: 1rem 1.7rem 1rem 0;
     }
 
     .image {
@@ -68,9 +68,10 @@ export const List = styled.ul`
     }
 
     @media (max-width: 600px) {
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
         li {
+            margin: 0.8rem 1rem 0.8rem 0;
         }
 
         .title {

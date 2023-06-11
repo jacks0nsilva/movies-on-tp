@@ -15,7 +15,6 @@ export const Container = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 0.5rem;
         margin-bottom: 1.8rem;
     }
 
@@ -58,13 +57,13 @@ export const Container = styled.section`
     .item {
         width: 280px;
         flex: none;
+        margin: 0 1.4rem 0 0;
     }
 
     .info {
         display: flex;
         flex-direction: column;
-        padding: 0 0.5rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .info span {
@@ -132,7 +131,7 @@ export const Container = styled.section`
 
 export const ImageContainer = styled.div`
     max-width: 100%;
-    height: 390px;
+    height: auto;
 
     img {
         max-width: 100%;
@@ -141,10 +140,10 @@ export const ImageContainer = styled.div`
     }
 
     &:nth-child(odd) {
-        padding: 0 0.5rem;
+        padding: 0rem;
     }
 
     @media (max-width: 600px) {
-        height: 220px;
+        height: auto;
     }
 `;
