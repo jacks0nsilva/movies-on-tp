@@ -68,7 +68,7 @@ export const List = styled.ul`
     }
 
     @media (max-width: 600px) {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
         li {
             margin: 0.8rem 1rem 0.8rem 0;

@@ -13,7 +13,7 @@ export const Container = styled.section`
     }
 
     @media (max-width: 600px) {
-        padding: 4rem 2rem;
+        padding: 1rem;
         h1 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
@@ -24,20 +24,24 @@ export const Container = styled.section`
 export const List = styled.ul`
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+
+    li {
+        align-self: flex-start;
+    }
 
     .image {
-        max-width: 300px;
-        height: 70%;
+        max-width: 100%;
+        height: auto;
     }
 
     .image img {
         max-width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .details {
@@ -76,10 +80,15 @@ export const List = styled.ul`
     }
 
     @media (max-width: 600px) {
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
-        li {
-            padding: 0.6rem 0;
+        .title {
+            font-size: 0.9rem;
+        }
+
+        .genres,
+        .vote {
+            font-size: 0.8rem;
         }
     }
 `;
