@@ -29,6 +29,7 @@ export interface Options {
 }
 
 export interface MoviesPopular {
+    name: string;
     adult: boolean;
     backdrop_path: string;
     genre_ids: number[];
@@ -46,6 +47,7 @@ export interface MoviesPopular {
 }
 
 export interface TvPopular {
+    title: string;
     backdrop_path: string;
     first_air_date: string;
     genre_ids: number[];

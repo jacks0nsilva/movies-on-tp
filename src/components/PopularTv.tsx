@@ -3,7 +3,7 @@ import { TV_POPULAR, TV_GENRES, image_path } from '../config/API';
 import { TvPopular, TvGenresList } from '../interface/interface';
 import useGenre from '../hooks/useGenre';
 import { Link } from 'react-router-dom';
-import { usePaginationTv } from '../hooks/usePaginationTv';
+import { usePagination } from '../hooks/usePagination';
 import { Container, List } from '../styles/Popular';
 import Image from './Image';
 
@@ -11,7 +11,7 @@ const PopularTv = () => {
     const [series, setSeries] = React.useState<TvPopular[]>([]);
     const [genres, setGenres] = React.useState<TvGenresList[]>([]);
     const { filterGenre } = useGenre();
-    const { currentItems, pageSelector } = usePaginationTv(8, series);
+    const { currentItems, pageSelector } = usePagination(8, series);
 
     React.useEffect(() => {
         async function initTV() {

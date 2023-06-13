@@ -1,14 +1,17 @@
 import React from 'react';
-import { TvPopular } from '../interface/interface';
+import { MoviesPopular, TvPopular } from '../interface/interface';
 
-export const usePaginationTv = (ipp: number, series: TvPopular[]) => {
+export const usePagination = (
+    ipp: number,
+    movies: TvPopular[] | MoviesPopular[]
+) => {
     const [itemPerPage] = React.useState(ipp);
     const [currentPage, setCurrentPage] = React.useState(0);
 
-    const pages = Math.ceil(series.length / itemPerPage);
+    const pages = Math.ceil(movies.length / itemPerPage);
     const startIndex = currentPage * itemPerPage;
     const endIndex = startIndex + itemPerPage;
-    const currentItems = series.slice(startIndex, endIndex);
+    const currentItems = movies.slice(startIndex, endIndex);
     const numberPage = Array.from(Array(pages));
 
     function pageSelector() {

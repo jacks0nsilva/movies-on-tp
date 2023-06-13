@@ -3,14 +3,14 @@ import { MOVIES_POPULAR, image_path, MOVIES_GENRES_LIST } from '../config/API';
 import { MoviesPopular, MoviesGenresList } from '../interface/interface';
 import { Link } from 'react-router-dom';
 import useGenre from '../hooks/useGenre';
-import { usePaginationMovies } from '../hooks/usePaginationMovies';
+import { usePagination } from '../hooks/usePagination';
 import { Container, List } from '../styles/Popular';
 import Image from './Image';
 
 const PopularMovies = () => {
     const [movies, setMovies] = React.useState<MoviesPopular[]>([]);
     const [genres, setGenres] = React.useState<MoviesGenresList[]>([]);
-    const { pageSelector, currentItems } = usePaginationMovies(8, movies);
+    const { pageSelector, currentItems } = usePagination(8, movies);
     const { filterGenre } = useGenre();
 
     React.useEffect(() => {
