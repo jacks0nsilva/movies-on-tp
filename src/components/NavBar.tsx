@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <>
             <Nav>
-                <h1>Filmes e Séries populares</h1>
+                <h1>FILMES E SÉRIES POPULARES</h1>
                 <ButtonsContainer>
                     <button onClick={() => setParams('movie')}>Filmes</button>
                     <button onClick={() => setParams('tv')}>Séries</button>
