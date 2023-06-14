@@ -12,10 +12,13 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 
 ## Tecnlogias utilizadas
 
--   React
--   Typescript
--   React Router
--   Styled-Components
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
 ## Implementações Futuras
 
