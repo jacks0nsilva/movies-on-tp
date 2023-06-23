@@ -39,7 +39,7 @@ export const Modal = styled.div`
     width: 100%;
     height: 3.5rem;
     top: 72px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 2;
     box-shadow: -2px 3px 20px 0px #12121266;
 
@@ -53,7 +53,7 @@ export const Modal = styled.div`
 
     .formulario input[type='text'] {
         background: #28282d;
-        color: rgba(255, 255, 255, 0.75);
+        color: ${(props) => props.theme.colors.lightgray};
         font-size: 1rem;
         width: 60%;
         height: 100%;
@@ -63,6 +63,10 @@ export const Modal = styled.div`
 
     .formulario input[type='text']:focus {
         outline: 1px #6f6f7e solid;
+    }
+
+    .formulario input[type='text']::placeholder {
+        color: ${(props) => props.theme.colors.lightgray};
     }
 
     .formulario button {

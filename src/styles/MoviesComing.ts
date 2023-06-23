@@ -19,7 +19,7 @@ export const Container = styled.section`
     }
 
     .title h1 {
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         text-transform: uppercase;
         font-size: 2rem;
     }
@@ -72,7 +72,7 @@ export const Container = styled.section`
 
     .spanTitle {
         font-size: 1.1rem;
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         font-weight: bold;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -80,12 +80,12 @@ export const Container = styled.section`
     }
 
     .spanGenres {
-        color: #bebdbd;
+        color: ${(props) => props.theme.colors.lightgray};
         font-size: 1rem;
     }
 
     .vote {
-        color: #bebdbd;
+        color: ${(props) => props.theme.colors.lightgray};
         padding-top: 0.3rem;
         position: relative;
         margin-left: 20px;

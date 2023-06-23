@@ -9,7 +9,7 @@ export const Container = styled.section`
     background-attachment: fixed !important;
 
     h1 {
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         padding: 1rem 0;
     }
 
@@ -65,7 +65,7 @@ export const Details = styled.div`
     }
 
     .vote {
-        color: #fff !important;
+        color: ${(props) => props.theme.colors.white} !important;
         padding-top: 0.3rem;
         position: relative;
         margin-left: 20px;
@@ -79,7 +79,7 @@ export const Details = styled.div`
     }
 
     .sinopse {
-        color: #fff !important;
+        color: ${(props) => props.theme.colors.white} !important;
         margin-top: 1.5rem;
         word-break: break-word;
         overflow: hidden;

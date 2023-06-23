@@ -23,7 +23,7 @@ export const Nav = styled.nav`
     }
 
     h1 {
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         margin: 0.8rem 0rem;
         font-size: 2rem;
         text-align: center;
@@ -54,7 +54,7 @@ export const ButtonsContainer = styled.div`
     }
 
     button:hover {
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         border: 1px solid rgba(255, 255, 255, 0.404);
     }
 `;

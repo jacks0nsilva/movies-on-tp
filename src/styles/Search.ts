@@ -7,7 +7,7 @@ export const Container = styled.section`
     min-height: 100vh;
 
     h1 {
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         font-size: 2.3rem;
         margin-bottom: 1.5rem;
     }
@@ -51,7 +51,7 @@ export const List = styled.ul`
 
     .title {
         font-size: 1.1rem;
-        color: #fff;
+        color: ${(props) => props.theme.colors.white};
         font-weight: bold;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -60,12 +60,12 @@ export const List = styled.ul`
     }
 
     .genres {
-        color: #bebdbd;
+        color: ${(props) => props.theme.colors.lightgray};
         font-size: 1rem;
     }
 
     .vote {
-        color: #bebdbd;
+        color: ${(props) => props.theme.colors.lightgray};
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
         position: relative;
