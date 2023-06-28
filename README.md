@@ -10,6 +10,20 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 
 <!-- É possível adicionar o filme a uma lista de favoritos, basta clica no coração no lado direito superior do card. A lista ficará salva no seu navegador, se a página for recarregada os filmes não serão removidos. -->
 
+## Visual do Projeto 🎨
+
+### _Desktop_
+
+<h1>
+    <img src="github/desktop.png" style="width: 80%">
+</h1>
+
+### _Mobile_
+
+<h1>
+    <img src="github/mobile.png" style="width: 80%">
+</h1>
+
 ## Tecnlogias utilizadas 🖥️
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
