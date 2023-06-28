@@ -21,7 +21,7 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 ### _Mobile_
 
 <h1>
-    <img src="github/mobile.png" style="width: 80%">
+    <img src="github/mobile.jpg" style="width: 80%">
 </h1>
 
 ## Tecnlogias utilizadas 🖥️
@@ -33,6 +33,26 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+## Instalação do Projeto 📂
+
+### Clonando o projeto
+
+```sh
+git clone https://github.com/jacks0nsilva/movies-on-tp.git
+```
+
+### Instalando depedências
+
+```sh
+npm install
+```
+
+### Compilar programa e iniciar o projeto
+
+```sh
+npm run dev
+```
 
 ## Implementações Futuras 🖥️
 
