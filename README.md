@@ -21,7 +21,7 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 ### _Mobile_
 
 <h1>
-    <img src="github/mobile.jpg" style="width: 80%">
+    <img src="github/mobile.jpg" style="width: 40%">
 </h1>
 
 ## Tecnlogias utilizadas 🖥️
