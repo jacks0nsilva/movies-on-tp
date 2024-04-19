@@ -1,5 +1,4 @@
-const acessToken =
-    'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYTY5NTRiZDY1Mzk5MTNjYWUxNTk4ZDVhMGE4MWU0MCIsInN1YiI6IjY0MDM2ZTU1MzkyNzEyMDBkMDM0ZDc2ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.fr1xPZaczGdJLs_ypClaEUX6Gvv9SF3JEQCDHpG72Eg';
+const acessToken = import.meta.env.VITE_ACESS_TOKEN;
 
 export const image_path = 'https://image.tmdb.org/t/p/w500';
 
